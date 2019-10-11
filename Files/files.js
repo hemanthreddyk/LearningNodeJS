@@ -14,7 +14,7 @@ fs.readFile('./testfile.js', "utf8", (err, data) => {
 
 console.log('after reading');
 
-fs.writeFile("./testfile.js", "console.log('hello')", (err) => {
+fs.writeFile("./testfile.js", "console.log('hello');", (err) => {
     if (err) {
         console.log(err);
     }else{
@@ -24,7 +24,7 @@ fs.writeFile("./testfile.js", "console.log('hello')", (err) => {
 
 console.log('after writing');
 
-fs.appendFile("./testfile.js", "console.log('hi')", (err) => {
+fs.appendFile("./testfile.js", "console.log('hi');", (err) => {
     if (err) {
         console.log(err);
     }else{
