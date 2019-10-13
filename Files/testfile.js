@@ -1,1 +1,10 @@
-console.log('hello');console.log('hi');
+//test file data
+let name = "John";
+
+function sayHi() {
+  alert("Hi, " + name);
+}
+
+name = "Pete";
+
+sayHi();
