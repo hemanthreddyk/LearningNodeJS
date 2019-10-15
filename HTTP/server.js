@@ -2,6 +2,9 @@ const http = require('http');
 const url = require('url');
 
 const server = http.createServer((req, res) => {
+    // console.log(http.METHODS);
+    // console.log(http.STATUS_CODES);
+  //  console.log(req);
     if (req.url === '/') {
         res.writeHead(200, {
             'Content-Type': 'text/html'
