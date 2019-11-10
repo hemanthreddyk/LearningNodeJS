@@ -1,6 +1,6 @@
-const http = require('http');
+const https = require('https');
 
-const req = http.request({
+const req = https.request({
     hostname: 'www.google.com'
 }, (res) => {
     console.log(res.statusCode);
