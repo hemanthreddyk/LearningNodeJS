@@ -1,0 +1,3693 @@
+{
+  "name": "getAssociateDataBR",
+  "_typeId": "dc661b4368754b44a5d151b999fe2135",
+  "caption": "Get Associate Data BR",
+  "deprecated": "false",
+  "_localVersion": 1573467233096,
+  "overrideScope": "internal",
+  "_parentVersion": null,
+  "referenceScope": "internal",
+  "_lastModifiedBy": "3fcbeef3-86fb-4a69-acbf-f746450c0116",
+  "templateTypeName": "business-rule",
+  "_objectId": "2f11f8883b264f3cad06cbe10dad4ae4",
+  "_branchId": "Cif4K1_v",
+  "_createdDate": 1573469313211,
+  "_lastModifiedDate": 1573469358978,
+  "_rootTypeId": "dc661b4368754b44a5d151b999fe2135",
+  "parameters": [
+    {
+      "name": "associateID",
+      "type": "key",
+      "scope": "input",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "associateID (input: key): Associate ID",
+      "_objectId": "b949e68305a64f159301fb74d69fe39a",
+      "description": "Associate ID",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "userID",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "userID (output: text): User ID",
+      "_objectId": "72dea25734bd4a29aecf9db0d3126bc2",
+      "description": "User ID",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "userName",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "userName (output: text): User Name",
+      "_objectId": "011b07a31a884a228b6babc7226f1ad7",
+      "description": "User Name",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "firstName",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "firstName (output: text): First Name",
+      "_objectId": "3c047f9b68674df59ce6dbf71bf4c0f8",
+      "description": "First Name",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "lastName",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "lastName (output: text): Last Name",
+      "_objectId": "9663691f48c94769b84fbfee210d75a6",
+      "description": "Last Name",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "middleName",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "middleName (output: text): Middle Name",
+      "_objectId": "4fa927b43a2844d0b4766b6ab22edb3b",
+      "description": "Middle Name",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "prefferedFirstName",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "prefferedFirstName (output: text): prefferedFirstName",
+      "_objectId": "74d9dff9fe49478ea6638888e86d89df",
+      "description": "prefferedFirstName",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "prefferedMiddleName",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "prefferedMiddleName (output: text): prefferedMiddleName",
+      "_objectId": "c0ab98a5388d47d5adb09bdbc4136d33",
+      "description": "prefferedMiddleName",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "prefferedLastName",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "prefferedLastName (output: text): prefferedLastName",
+      "_objectId": "8f8710fd5c90475f9915548ac21094d4",
+      "description": "prefferedLastName",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "prefix",
+      "type": "picklist",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "prefix (output: picklist): Prefix",
+      "_objectId": "df3bc27ef6754a3b87e1e417c14a4339",
+      "picklistId": "54dbbadcdcb0d9cd52edc8db",
+      "description": "Prefix",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "suffix",
+      "type": "picklist",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "suffix (output: picklist): Suffix",
+      "_objectId": "de8b3109acc34083be25b10d5980de5c",
+      "picklistId": "778c7b003c4f26536796762a",
+      "description": "Suffix",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "primaryEmail",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "primaryEmail (output: text): Primary Email",
+      "_objectId": "635ba94fd31c4b21940bd4adc850662b",
+      "description": "Primary Email",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "personalEmail",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "personalEmail (output: text): Personal Email",
+      "_objectId": "8577b75d72bd45a39920e8eb00ffd45b",
+      "description": "Personal Email",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "homePhone",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "homePhone (output: text): Home Phone",
+      "_objectId": "d112bfdbc1ad440e975ed844619c769a",
+      "description": "Home Phone",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "mobilePhone",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "mobilePhone (output: text): Mobile Phone",
+      "_objectId": "4e952bb25ef54f37965f901a4aab5858",
+      "description": "Mobile Phone",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "workPhone",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "workPhone (output: text): Work Phone",
+      "_objectId": "057682bc60524f5e848e34b0c0371ff5",
+      "description": "Work Phone",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "fax",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "fax (output: text): Fax",
+      "_objectId": "eb92b1e2487a4717baf3e4d1f4b53b43",
+      "description": "Fax",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "country",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "country (output: text): Country",
+      "_objectId": "20aa1bb8587a49d89fdd638434667593",
+      "description": "Country",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "addressLine1",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "addressLine1 (output: text): Address Line 1",
+      "_objectId": "e3a9acc96d574de68c61dd3f24b0bf5a",
+      "description": "Address Line 1",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "addressLine2",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "addressLine2 (output: text): Address Line 2",
+      "_objectId": "bc6d804a6b5e477994f79b922ed40574",
+      "description": "Address Line 2",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "city",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "city (output: text): City",
+      "_objectId": "5422c43b034c409494eb69c671849194",
+      "description": "City",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "state (output: text): State",
+      "_objectId": "77154023dafc482e87e82f37794f9e8f",
+      "description": "State",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "zipCode",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "zipCode (output: text): Zip Code",
+      "_objectId": "808cbf3a265d4db59fbc0de3009e24f8",
+      "description": "Zip Code",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "lastHireDate",
+      "type": "datetime",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "lastHireDate (output: datetime): Last Hire Date",
+      "_objectId": "36c409df7e5240b3843b9d92fdac30ad",
+      "description": "Last Hire Date",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "originalHireDate",
+      "type": "datetime",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "originalHireDate (output: datetime): Original Hire Date",
+      "_objectId": "32502a5fa7794e3fa59c728bf5a03afe",
+      "description": "Original Hire Date",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "active",
+      "type": "logical",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "active (output: logical): Active",
+      "_objectId": "fa037300453c4d999de849e685905b39",
+      "description": "Active",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "absent",
+      "type": "logical",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "absent (output: logical): Absent",
+      "_objectId": "0efcde835cd24a36a434e974d62f9e7e",
+      "description": "Absent",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "managerUserID",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "managerUserID (output: text): Manager User ID",
+      "_objectId": "699ff426d05e40eeb1fa7bdce2f5a086",
+      "description": "Manager User ID",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    },
+    {
+      "name": "approverUserID",
+      "type": "text",
+      "scope": "output",
+      "_typeId": "6ed690b54573448caa5b79faaf4e67ba",
+      "caption": "approverUserID (output: text): Approver User ID",
+      "_objectId": "353e30495eb54a2dacf5631064e8f456",
+      "description": "Approver User ID",
+      "_rootTypeId": "6ed690b54573448caa5b79faaf4e67ba"
+    }
+  ],
+  "children": [
+    {
+      "name": "associateIdCheck",
+      "_typeId": "8304d74473724a9fbd90b0c75e59d582",
+      "caption": "Associate Id Check",
+      "showElse": "no",
+      "_objectId": "01aa84adc18a4b51b63cb0fe6465bc10",
+      "templateTypeName": "if-then-else",
+      "_rootTypeId": "8304d74473724a9fbd90b0c75e59d582",
+      "condition": {
+        "_typeId": "7cc1fa85510940439ebfa5d499824588",
+        "_objectId": "229092e15e8947a090da7e6a96414eea",
+        "deprecated": "false",
+        "overrideScope": "internal",
+        "referenceScope": "internal",
+        "_rootTypeId": "7cc1fa85510940439ebfa5d499824588",
+        "children": [
+          {
+            "name": "newConditionRow",
+            "andor": "and",
+            "_typeId": "f6742a727a154f0391b0305eda2004ab",
+            "operator": "equalTo",
+            "_objectId": "5455a39fb2a44fa28d168251a0e457f6",
+            "firstValue": {
+              "_dynamicValue": {
+                "id": "b949e68305a64f159301fb74d69fe39a",
+                "name": "associateID",
+                "path": "input/b949e68305a64f159301fb74d69fe39a",
+                "type": "key",
+                "active": true,
+                "mappingType": "select-field",
+                "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+              }
+            },
+            "secondValue": {
+              "_dynamicValue": {
+                "id": "c2455af2928e42679e64a7dbf975722a",
+                "name": "Null",
+                "path": "system/null",
+                "type": "system-null",
+                "active": true,
+                "pathName": "system/null",
+                "mappingType": "select-field",
+                "displayValue": "system/null"
+              }
+            },
+            "closingBracket": ")",
+            "openingBracket": "(",
+            "_rootTypeId": "f6742a727a154f0391b0305eda2004ab"
+          },
+          {
+            "name": "newConditionRow_1",
+            "andor": "or",
+            "_typeId": "f6742a727a154f0391b0305eda2004ab",
+            "operator": "empty",
+            "_objectId": "cded83e0fda24a95b184ed9a62670428",
+            "firstValue": {
+              "_dynamicValue": {
+                "id": "b949e68305a64f159301fb74d69fe39a",
+                "name": "associateID",
+                "path": "input/b949e68305a64f159301fb74d69fe39a",
+                "type": "key",
+                "active": true,
+                "mappingType": "select-field",
+                "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+              }
+            },
+            "closingBracket": ")",
+            "openingBracket": "(",
+            "_rootTypeId": "f6742a727a154f0391b0305eda2004ab"
+          }
+        ]
+      },
+      "children": [
+        {
+          "_typeId": "3b00ac23559b477ebe0de41caacc464d",
+          "caption": "If Branch",
+          "_objectId": "a92ab31a0c8d4d7bb27b6f183aa9440f",
+          "templateTypeName": "if-then-else-branch",
+          "_rootTypeId": "3b00ac23559b477ebe0de41caacc464d",
+          "children": [
+            {
+              "name": "return",
+              "_typeId": "aac3399584ce48d5825988412995f25c",
+              "caption": "Return",
+              "_objectId": "6f4f2124d0e5427f86e0ed4be71bb86d",
+              "description": "Returning because Associate ID is Null",
+              "templateTypeName": "return-statement",
+              "_rootTypeId": "aac3399584ce48d5825988412995f25c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FetchAOID",
+      "mapper": "br-call-business-rule",
+      "_typeId": "76765518c62a45d7bea97816c8b1547e",
+      "caption": "FetchAOID",
+      "_objectId": "6b105241d5df4e24aa4de1a55830f9f8",
+      "description": "FetchAOID",
+      "businessRule": "cc805c3d72bb468b86591fad32450c08",
+      "templateTypeName": "call-business-rule",
+      "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+      "inputs": [
+        {
+          "id": "c08d8c414e5b41f3bac7c16ac4ace364",
+          "name": "associateID",
+          "type": "key",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "b949e68305a64f159301fb74d69fe39a",
+              "name": "associateID",
+              "path": "input/b949e68305a64f159301fb74d69fe39a",
+              "type": "key",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "a4277ffc17b4450eb9162c2515bf2c04",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        }
+      ]
+    },
+    {
+      "name": "getCorrectAOIDValue",
+      "mapper": "br-call-business-rule",
+      "_typeId": "76765518c62a45d7bea97816c8b1547e",
+      "caption": "Get Correct AOID Value",
+      "_objectId": "ebe7da4e347043c9b4f0a0503c8c992f",
+      "description": "Get Correct AOID Value",
+      "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+      "templateTypeName": "call-business-rule",
+      "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+      "inputs": [
+        {
+          "id": "944518cdade342d3bec3e13d861a2289",
+          "name": "inputString",
+          "type": "text",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "AOID",
+              "name": "AOID",
+              "path": "6b105241d5df4e24aa4de1a55830f9f8/AOID",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "6b105241d5df4e24aa4de1a55830f9f8/AOID",
+              "sourceBlockId": "6b105241d5df4e24aa4de1a55830f9f8",
+              "sourceBlockName": "FetchAOID"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "bf96eca6a751446b86448ed1b3c8ad65",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "cf61be37cb144c5ca320f936f46dabf6",
+          "name": "actualLengthOfInputString",
+          "type": "number",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "type": "number",
+              "value": 128,
+              "mappingType": "enter-value"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "4d25b32cc05243409b1272882c62bc3f",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        }
+      ]
+    },
+    {
+      "name": "userName",
+      "type": "text",
+      "value": {
+        "_dynamicValue": {
+          "id": "outputString",
+          "name": "outputString",
+          "path": "ebe7da4e347043c9b4f0a0503c8c992f/outputString",
+          "type": "text",
+          "active": true,
+          "mappingType": "select-field",
+          "displayValue": "ebe7da4e347043c9b4f0a0503c8c992f/outputString",
+          "sourceBlockId": "ebe7da4e347043c9b4f0a0503c8c992f",
+          "sourceBlockName": "getCorrectAOIDValue"
+        }
+      },
+      "mapper": "br-variable",
+      "_typeId": "dac19da3af0d480892c6642bd047653c",
+      "caption": "User Name",
+      "variable": {
+        "_dynamicValue": {
+          "id": "011b07a31a884a228b6babc7226f1ad7",
+          "name": "userName",
+          "path": "output/011b07a31a884a228b6babc7226f1ad7",
+          "type": "text",
+          "active": true,
+          "mappingType": "select-field",
+          "displayValue": "output/011b07a31a884a228b6babc7226f1ad7"
+        }
+      },
+      "_objectId": "60c72a05614d49ce88efd9996c5eaa0d",
+      "description": "User Name",
+      "variableToggle": "false",
+      "templateTypeName": "variable",
+      "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+    },
+    {
+      "name": "Names_API",
+      "mapper": "br-data-contract",
+      "_typeId": "56b6df2fc2c94402a4ab58a09767ff3f",
+      "caption": "Names_API",
+      "_objectId": "74c9a3704a1a42f3af7849ae6ab4a3c9",
+      "dataContract": "51dcfc4ae4454797908a21c5f6e62988",
+      "templateTypeName": "data-contract",
+      "_rootTypeId": "56b6df2fc2c94402a4ab58a09767ff3f",
+      "inputs": [
+        {
+          "id": "65247ea06f7f4273999d52dd3a7cbfe9",
+          "name": "RecordId",
+          "type": "key",
+          "scope": "input",
+          "value": null,
+          "_typeId": "2bb052c263f52b1cbb942bac8a72e61c",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "07a4b09b8d354b23a4a4510b7270c3c1",
+          "picklistId": null,
+          "_rootTypeId": "2bb052c263f52b1cbb942bac8a72e61c"
+        },
+        {
+          "id": "3a580cbecd514a7796221c13100704df",
+          "name": "AssociateID",
+          "type": "key",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "b949e68305a64f159301fb74d69fe39a",
+              "name": "associateID",
+              "path": "input/b949e68305a64f159301fb74d69fe39a",
+              "type": "key",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+            }
+          },
+          "_typeId": "2bb052c263f52b1cbb942bac8a72e61c",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "5435bdc0a53a4179a054acaadd95076b",
+          "picklistId": null,
+          "_rootTypeId": "2bb052c263f52b1cbb942bac8a72e61c"
+        },
+        {
+          "id": "251dbcb253964b6c9b23f1f022014734",
+          "name": "AsOfDate",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "2bb052c263f52b1cbb942bac8a72e61c",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "ad55294e68934c6fbdb3e7ad1918db56",
+          "picklistId": null,
+          "_rootTypeId": "2bb052c263f52b1cbb942bac8a72e61c"
+        }
+      ]
+    },
+    {
+      "name": "namesShapeLoop",
+      "type": "forEach",
+      "upto": "<",
+      "items": {
+        "_dynamicValue": {
+          "name": "names",
+          "path": "74c9a3704a1a42f3af7849ae6ab4a3c9/names",
+          "type": "array",
+          "active": true,
+          "caption": "names",
+          "parentName": "names",
+          "parentType": "array",
+          "mappingType": "select-field",
+          "displayValue": "74c9a3704a1a42f3af7849ae6ab4a3c9/names",
+          "sourceBlockId": "74c9a3704a1a42f3af7849ae6ab4a3c9",
+          "sourceBlockName": "Names_API",
+          "isDataContractOutput": true
+        }
+      },
+      "mapper": "br-loop",
+      "_typeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "caption": "Names Shape Loop",
+      "iterator": "newLoop",
+      "_objectId": "75adbcc232f743699c000d766a348ae9",
+      "description": "Names Shape Loop",
+      "templateTypeName": "loop",
+      "_rootTypeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "children": [
+        {
+          "name": "getFirstNameContaining200characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get First Name Containing 200 characters",
+          "_objectId": "94e2fded51f54753993f25f1032b26e6",
+          "description": "Get First Name Containing 200 characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "givenName",
+                  "path": "75adbcc232f743699c000d766a348ae9/givenName",
+                  "type": "text",
+                  "active": true,
+                  "caption": "givenName",
+                  "parentName": "names",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "75adbcc232f743699c000d766a348ae9/givenName",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+                  "sourceBlockName": "namesShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "22c335f323b24841afe3e07c661df69e",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 200,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "1da52b34acb04b1ca97ddc35fb2163ea",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "firstName",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "94e2fded51f54753993f25f1032b26e6/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "94e2fded51f54753993f25f1032b26e6/outputString",
+              "sourceBlockId": "94e2fded51f54753993f25f1032b26e6",
+              "sourceBlockName": "getFirstNameContaining200characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "First Name",
+          "variable": {
+            "_dynamicValue": {
+              "id": "3c047f9b68674df59ce6dbf71bf4c0f8",
+              "name": "firstName",
+              "path": "output/3c047f9b68674df59ce6dbf71bf4c0f8",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/3c047f9b68674df59ce6dbf71bf4c0f8"
+            }
+          },
+          "_objectId": "7a6d8f8a9e1c48dfab77423748b56c83",
+          "description": "First Name",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "getLastNameContaining200characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get Last Name Containing 200 characters",
+          "_objectId": "459c294cc98b4456bacbdc8a8b088f82",
+          "description": "Get Last Name Containing 200 characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "familyName1",
+                  "path": "75adbcc232f743699c000d766a348ae9/familyName1",
+                  "type": "text",
+                  "active": true,
+                  "caption": "familyName1",
+                  "parentName": "names",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "75adbcc232f743699c000d766a348ae9/familyName1",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+                  "sourceBlockName": "namesShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "38005963d94e4e01b50e7991fec0e993",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 200,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "c0b87bfcd2bf4283bc2f1b8b4cb06fb3",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "459c294cc98b4456bacbdc8a8b088f82/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "459c294cc98b4456bacbdc8a8b088f82/outputString",
+              "sourceBlockId": "459c294cc98b4456bacbdc8a8b088f82",
+              "sourceBlockName": "getLastNameContaining200characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Last Name",
+          "variable": {
+            "_dynamicValue": {
+              "id": "9663691f48c94769b84fbfee210d75a6",
+              "name": "lastName",
+              "path": "output/9663691f48c94769b84fbfee210d75a6",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/9663691f48c94769b84fbfee210d75a6"
+            }
+          },
+          "_objectId": "72ad0cdbedfe4c01b67f0cc3dc56fdac",
+          "description": "Last Name",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "getMiddleNameContaining200characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get Middle Name Containing 200 characters",
+          "_objectId": "6e5d8f28c4a942dbb771adadc11f8b79",
+          "description": "Get Middle Name Containing 200 characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "middleName",
+                  "path": "75adbcc232f743699c000d766a348ae9/middleName",
+                  "type": "text",
+                  "active": true,
+                  "caption": "middleName",
+                  "parentName": "names",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "75adbcc232f743699c000d766a348ae9/middleName",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+                  "sourceBlockName": "namesShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "129203c3db7740e18a76bbeed5cf9dbd",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 200,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "aa00e44d0edd40f6968dfd4d0e4217af",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "middleName",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "6e5d8f28c4a942dbb771adadc11f8b79/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "6e5d8f28c4a942dbb771adadc11f8b79/outputString",
+              "sourceBlockId": "6e5d8f28c4a942dbb771adadc11f8b79",
+              "sourceBlockName": "getMiddleNameContaining200characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Middle Name",
+          "variable": {
+            "_dynamicValue": {
+              "id": "4fa927b43a2844d0b4766b6ab22edb3b",
+              "name": "middleName",
+              "path": "output/4fa927b43a2844d0b4766b6ab22edb3b",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/4fa927b43a2844d0b4766b6ab22edb3b"
+            }
+          },
+          "_objectId": "4f2c971c69924f0b930e7b4f37d7fc6a",
+          "description": "Middle Name",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "prefix",
+          "type": "picklist",
+          "value": {
+            "_dynamicValue": {
+              "name": "salutation1",
+              "path": "75adbcc232f743699c000d766a348ae9/salutation1",
+              "type": "picklist",
+              "active": true,
+              "caption": "salutation1",
+              "parentName": "names",
+              "parentType": "array",
+              "picklistId": "54dbbadcdcb0d9cd52edc8db",
+              "mappingType": "select-field",
+              "displayValue": "75adbcc232f743699c000d766a348ae9/salutation1",
+              "isLoopOutput": true,
+              "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+              "sourceBlockName": "namesShapeLoop"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Prefix",
+          "variable": {
+            "_dynamicValue": {
+              "id": "df3bc27ef6754a3b87e1e417c14a4339",
+              "name": "prefix",
+              "path": "output/df3bc27ef6754a3b87e1e417c14a4339",
+              "type": "picklist",
+              "active": true,
+              "picklistId": "54dbbadcdcb0d9cd52edc8db",
+              "mappingType": "select-field",
+              "displayValue": "output/df3bc27ef6754a3b87e1e417c14a4339"
+            }
+          },
+          "_objectId": "18482736b83241208daefe1edb7e8f3c",
+          "description": "Prefix",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "suffix",
+          "type": "picklist",
+          "value": {
+            "_dynamicValue": {
+              "name": "generationAffix",
+              "path": "75adbcc232f743699c000d766a348ae9/generationAffix",
+              "type": "picklist",
+              "active": true,
+              "caption": "generationAffix",
+              "parentName": "names",
+              "parentType": "array",
+              "picklistId": "778c7b003c4f26536796762a",
+              "mappingType": "select-field",
+              "displayValue": "75adbcc232f743699c000d766a348ae9/generationAffix",
+              "isLoopOutput": true,
+              "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+              "sourceBlockName": "namesShapeLoop"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Suffix",
+          "variable": {
+            "_dynamicValue": {
+              "id": "de8b3109acc34083be25b10d5980de5c",
+              "name": "suffix",
+              "path": "output/de8b3109acc34083be25b10d5980de5c",
+              "type": "picklist",
+              "active": true,
+              "picklistId": "778c7b003c4f26536796762a",
+              "mappingType": "select-field",
+              "displayValue": "output/de8b3109acc34083be25b10d5980de5c"
+            }
+          },
+          "_objectId": "2e762135d867411ab123a45cc0015652",
+          "description": "Suffix",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "newVariable",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "name": "preferredName",
+              "path": "75adbcc232f743699c000d766a348ae9/preferredName",
+              "type": "text",
+              "active": true,
+              "caption": "preferredName",
+              "parentName": "names",
+              "parentType": "array",
+              "mappingType": "select-field",
+              "displayValue": "75adbcc232f743699c000d766a348ae9/preferredName",
+              "isLoopOutput": true,
+              "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+              "sourceBlockName": "namesShapeLoop"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Variable",
+          "variable": {
+            "_dynamicValue": {
+              "id": "74d9dff9fe49478ea6638888e86d89df",
+              "name": "prefferedFirstName",
+              "path": "output/74d9dff9fe49478ea6638888e86d89df",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/74d9dff9fe49478ea6638888e86d89df"
+            }
+          },
+          "_objectId": "5b04ed5d32694e01af88499bad609915",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "newVariable_2",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "name": "PreferredMiddleName",
+              "path": "75adbcc232f743699c000d766a348ae9/PreferredMiddleName",
+              "type": "text",
+              "active": true,
+              "caption": "PreferredMiddleName",
+              "parentName": "names",
+              "parentType": "array",
+              "mappingType": "select-field",
+              "displayValue": "75adbcc232f743699c000d766a348ae9/PreferredMiddleName",
+              "isLoopOutput": true,
+              "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+              "sourceBlockName": "namesShapeLoop"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Variable",
+          "variable": {
+            "_dynamicValue": {
+              "id": "c0ab98a5388d47d5adb09bdbc4136d33",
+              "name": "prefferedMiddleName",
+              "path": "output/c0ab98a5388d47d5adb09bdbc4136d33",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/c0ab98a5388d47d5adb09bdbc4136d33"
+            }
+          },
+          "_objectId": "f402861a3fde4aea9129e143aeea4de5",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "newVariable_1",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "name": "PreferredFamilyName",
+              "path": "75adbcc232f743699c000d766a348ae9/PreferredFamilyName",
+              "type": "text",
+              "active": true,
+              "caption": "PreferredFamilyName",
+              "parentName": "names",
+              "parentType": "array",
+              "mappingType": "select-field",
+              "displayValue": "75adbcc232f743699c000d766a348ae9/PreferredFamilyName",
+              "isLoopOutput": true,
+              "sourceBlockId": "75adbcc232f743699c000d766a348ae9",
+              "sourceBlockName": "namesShapeLoop"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Variable",
+          "variable": {
+            "_dynamicValue": {
+              "id": "8f8710fd5c90475f9915548ac21094d4",
+              "name": "prefferedLastName",
+              "path": "output/8f8710fd5c90475f9915548ac21094d4",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/8f8710fd5c90475f9915548ac21094d4"
+            }
+          },
+          "_objectId": "3335e0962f604201a9dccd3c304dc205",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "newBreak_2",
+          "_typeId": "d57a01f8a7ea42f19fcd5a850fdddcff",
+          "caption": "Break",
+          "_objectId": "5014969936a84bb39abe7e1a8912fd29",
+          "templateTypeName": "flow-break-expression",
+          "_rootTypeId": "d57a01f8a7ea42f19fcd5a850fdddcff"
+        }
+      ]
+    },
+    {
+      "name": "getEmailData",
+      "shape": "7baba82642b64f8bbe7592d09f7147c2",
+      "mapper": "br-get-data",
+      "_typeId": "bd96b951ed344d93836f373f0099f80e",
+      "caption": "Get Email Data",
+      "_objectId": "a8bc40108c9a4c1ab6cc5af18d84e870",
+      "description": "Get Email Data",
+      "templateTypeName": "get-data",
+      "_rootTypeId": "bd96b951ed344d93836f373f0099f80e",
+      "shapeParameters": [
+        {
+          "id": "76ad9242e1a44523ac36418c54156932",
+          "name": "RecordId",
+          "type": "key",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "1a4c41aeb3df4c91bcc64cf5c70c665d",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "76d42f57aba54a1d8f2829ce3667a966",
+          "name": "AssociateId",
+          "type": "key",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "b949e68305a64f159301fb74d69fe39a",
+              "name": "associateID",
+              "path": "input/b949e68305a64f159301fb74d69fe39a",
+              "type": "key",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "3d16bae8d9114a0fab3d5e299397f2ac",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "958e2c1af1504662a3b4376f6fe4f25a",
+          "name": "EmailType",
+          "type": "picklist",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "a2fdd05bfdcd4253a82c55cf49cbb62f",
+          "picklistId": "933df2f0ae21f53aa4cac297",
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "1aa4f487953a423d861bad6b8ea1e0c2",
+          "name": "AsOfDate",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "88e5d8de05bf414cbe5f07e85e9bcbd2",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "d282ce44946d4db0b95b00a7759f0354",
+          "name": "limit",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "b4797548f0cb420cb0f825cdadcf3033",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "3bb0227278dc4bc48f973475e0a96eb0",
+          "name": "skip",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "6e3956eaac53409bbd0d536fe27bae66",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        }
+      ]
+    },
+    {
+      "name": "emailShapeLoop",
+      "type": "forEach",
+      "upto": "<",
+      "items": {
+        "_dynamicValue": {
+          "name": "emailAddresses",
+          "path": "a8bc40108c9a4c1ab6cc5af18d84e870/emailAddresses",
+          "type": "array",
+          "active": true,
+          "caption": "emailAddresses",
+          "mappingType": "select-field",
+          "displayValue": "a8bc40108c9a4c1ab6cc5af18d84e870/emailAddresses",
+          "sourceBlockId": "a8bc40108c9a4c1ab6cc5af18d84e870",
+          "isGetDataOutput": true,
+          "sourceBlockName": "getEmailData"
+        }
+      },
+      "mapper": "br-loop",
+      "_typeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "caption": "Email Shape Loop",
+      "iterator": "newLoop",
+      "_objectId": "a8baf996b78d4b44adddacb6cf569f34",
+      "description": "Email Shape Loop",
+      "templateTypeName": "loop",
+      "_rootTypeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "children": [
+        {
+          "name": "emailTypes",
+          "_typeId": "45577bb36c8847bcb9d1adaded489ac6",
+          "caption": "Email Types",
+          "variable": {
+            "_dynamicValue": {
+              "name": "emailType",
+              "path": "a8baf996b78d4b44adddacb6cf569f34/emailType",
+              "type": "picklist",
+              "active": true,
+              "caption": "emailType",
+              "parentName": "emailAddresses",
+              "parentType": "array",
+              "picklistId": "933df2f0ae21f53aa4cac297",
+              "mappingType": "select-field",
+              "displayValue": "a8baf996b78d4b44adddacb6cf569f34/emailType",
+              "isLoopOutput": true,
+              "sourceBlockId": "a8baf996b78d4b44adddacb6cf569f34",
+              "sourceBlockName": "emailShapeLoop"
+            }
+          },
+          "_objectId": "70030a9415764a53836bd171e4735d53",
+          "templateTypeName": "switch",
+          "_rootTypeId": "45577bb36c8847bcb9d1adaded489ac6",
+          "children": [
+            {
+              "name": "newCase_4",
+              "value": {
+                "_dynamicValue": {
+                  "type": "picklist",
+                  "value": "Personal",
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "e570d11943e141e19389ddee08ceeb20",
+              "caption": "Case",
+              "_objectId": "bbae45fe49754010b279b9d26de5eadd",
+              "checkType": "singleValue",
+              "templateTypeName": "case",
+              "_rootTypeId": "e570d11943e141e19389ddee08ceeb20",
+              "children": [
+                {
+                  "name": "personalEmail",
+                  "type": "text",
+                  "value": {
+                    "_dynamicValue": {
+                      "name": "emailAddress",
+                      "path": "a8baf996b78d4b44adddacb6cf569f34/emailAddress",
+                      "type": "text",
+                      "active": true,
+                      "caption": "emailAddress",
+                      "parentName": "emailAddresses",
+                      "parentType": "array",
+                      "mappingType": "select-field",
+                      "displayValue": "a8baf996b78d4b44adddacb6cf569f34/emailAddress",
+                      "isLoopOutput": true,
+                      "sourceBlockId": "a8baf996b78d4b44adddacb6cf569f34",
+                      "sourceBlockName": "emailShapeLoop"
+                    }
+                  },
+                  "mapper": "br-variable",
+                  "_typeId": "dac19da3af0d480892c6642bd047653c",
+                  "caption": "Personal Email",
+                  "variable": {
+                    "_dynamicValue": {
+                      "id": "34daae7685774eda8c9a42f34047865b",
+                      "name": "personalEmail",
+                      "path": "34daae7685774eda8c9a42f34047865b",
+                      "type": "text",
+                      "mappingType": "select-field",
+                      "displayValue": "34daae7685774eda8c9a42f34047865b"
+                    }
+                  },
+                  "_objectId": "34daae7685774eda8c9a42f34047865b",
+                  "description": "Personal Email",
+                  "variableToggle": "true",
+                  "templateTypeName": "variable",
+                  "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                }
+              ]
+            },
+            {
+              "name": "newCase_5",
+              "value": {
+                "_dynamicValue": {
+                  "type": "picklist",
+                  "value": "Business",
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "e570d11943e141e19389ddee08ceeb20",
+              "caption": "Case",
+              "_objectId": "2ecc1cfead094b33be80d04d63fd4cd9",
+              "checkType": "singleValue",
+              "templateTypeName": "case",
+              "_rootTypeId": "e570d11943e141e19389ddee08ceeb20",
+              "children": [
+                {
+                  "name": "newCallBusinessRule_1",
+                  "mapper": "br-call-business-rule",
+                  "_typeId": "76765518c62a45d7bea97816c8b1547e",
+                  "caption": "Call Business Rule",
+                  "_objectId": "5c96947c440548e99f1918e502f441d5",
+                  "templateTypeName": "call-business-rule",
+                  "_rootTypeId": "76765518c62a45d7bea97816c8b1547e"
+                },
+                {
+                  "name": "primaryEmail",
+                  "type": "text",
+                  "value": {
+                    "_dynamicValue": {
+                      "name": "emailAddress",
+                      "path": "a8baf996b78d4b44adddacb6cf569f34/emailAddress",
+                      "type": "text",
+                      "active": true,
+                      "caption": "emailAddress",
+                      "parentName": "emailAddresses",
+                      "parentType": "array",
+                      "mappingType": "select-field",
+                      "displayValue": "a8baf996b78d4b44adddacb6cf569f34/emailAddress",
+                      "isLoopOutput": true,
+                      "sourceBlockId": "a8baf996b78d4b44adddacb6cf569f34",
+                      "sourceBlockName": "emailShapeLoop"
+                    }
+                  },
+                  "mapper": "br-variable",
+                  "_typeId": "dac19da3af0d480892c6642bd047653c",
+                  "caption": "Primary Email",
+                  "variable": {
+                    "_dynamicValue": {
+                      "id": "0b9974b2300c4150aa253ec69215ff94",
+                      "name": "primaryEmail",
+                      "path": "0b9974b2300c4150aa253ec69215ff94",
+                      "type": "text",
+                      "mappingType": "select-field",
+                      "displayValue": "0b9974b2300c4150aa253ec69215ff94"
+                    }
+                  },
+                  "_objectId": "0b9974b2300c4150aa253ec69215ff94",
+                  "description": "Primary Email",
+                  "variableToggle": "true",
+                  "templateTypeName": "variable",
+                  "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                }
+              ]
+            },
+            {
+              "_typeId": "bb17db5277c745f5a51a8f13f4b3d31b",
+              "caption": "Case Default",
+              "_objectId": "7c6f446e973d40c28f29cfb6441e25d7",
+              "_rootTypeId": "bb17db5277c745f5a51a8f13f4b3d31b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getPhoneData",
+      "shape": "c4b15443fc914bea944cd396a0ea1605",
+      "mapper": "br-get-data",
+      "_typeId": "bd96b951ed344d93836f373f0099f80e",
+      "caption": "Get Phone Data",
+      "_objectId": "73304956fe6a4c7bbaddba4c28673f4a",
+      "description": "Get Phone Data",
+      "templateTypeName": "get-data",
+      "_rootTypeId": "bd96b951ed344d93836f373f0099f80e",
+      "shapeParameters": [
+        {
+          "id": "1d33d391cf0145f8a86f3e27f8e56f0a",
+          "name": "RecordId",
+          "type": "key",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "421e4bd9f9b549c3b8cc7d80be0b96c2",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "20f610fec0ca4e0e973d414aadb139d5",
+          "name": "AssociateId",
+          "type": "key",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "b949e68305a64f159301fb74d69fe39a",
+              "name": "associateID",
+              "path": "input/b949e68305a64f159301fb74d69fe39a",
+              "type": "key",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "b5c29fd4049748af8c38e593a4caffda",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "1c0e37ac2d654537a97b77f0a1aec4ae",
+          "name": "PhoneType",
+          "type": "picklist",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "0bc811c7cf5a47419ea85ed8a19907c1",
+          "picklistId": "90e2ae49f02aaf539c579e39",
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "1397c408e3ab4feeaeb62bf6aba96b00",
+          "name": "AsOfDate",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "ddafc794f2a848b09445bf13c4d08ca3",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "fba427fe1ce44145af393e359fe2798e",
+          "name": "limit",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "9ba08c41ed8d410e85e3035ee492fe41",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "23cae002cc2d4bd7b40fe955ceda7005",
+          "name": "skip",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "a1b0c85938d2401e81fbca70ce631947",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        }
+      ]
+    },
+    {
+      "name": "phoneShapeLoop",
+      "type": "forEach",
+      "upto": "<",
+      "items": {
+        "_dynamicValue": {
+          "name": "phoneNumbers",
+          "path": "73304956fe6a4c7bbaddba4c28673f4a/phoneNumbers",
+          "type": "array",
+          "active": true,
+          "caption": "phoneNumbers",
+          "mappingType": "select-field",
+          "displayValue": "73304956fe6a4c7bbaddba4c28673f4a/phoneNumbers",
+          "sourceBlockId": "73304956fe6a4c7bbaddba4c28673f4a",
+          "isGetDataOutput": true,
+          "sourceBlockName": "getPhoneData"
+        }
+      },
+      "mapper": "br-loop",
+      "_typeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "caption": "Phone Shape Loop",
+      "iterator": "newLoop",
+      "_objectId": "84502c26ae664ab9af0f44970ce1dd86",
+      "description": "Phone Shape Loop",
+      "templateTypeName": "loop",
+      "_rootTypeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "children": [
+        {
+          "name": "businessCheck",
+          "_typeId": "8304d74473724a9fbd90b0c75e59d582",
+          "caption": "Business Check",
+          "showElse": "no",
+          "_objectId": "f0e484ead2fd41648c4b8b9548e041f2",
+          "description": "Business Check",
+          "templateTypeName": "if-then-else",
+          "_rootTypeId": "8304d74473724a9fbd90b0c75e59d582",
+          "condition": {
+            "_typeId": "7cc1fa85510940439ebfa5d499824588",
+            "_objectId": "5bd0dfb335124df1848d35523ecb2b85",
+            "deprecated": "false",
+            "overrideScope": "internal",
+            "referenceScope": "internal",
+            "_rootTypeId": "7cc1fa85510940439ebfa5d499824588",
+            "children": [
+              {
+                "name": "newConditionRow",
+                "andor": "and",
+                "_typeId": "f6742a727a154f0391b0305eda2004ab",
+                "operator": "equalTo",
+                "_objectId": "f5ff8e76a5ed4ba1ac43d000cd0a16fc",
+                "firstValue": {
+                  "_dynamicValue": {
+                    "name": "phoneType",
+                    "path": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "type": "picklist",
+                    "active": true,
+                    "caption": "phoneType",
+                    "parentName": "phoneNumbers",
+                    "parentType": "array",
+                    "picklistId": "90e2ae49f02aaf539c579e39",
+                    "mappingType": "select-field",
+                    "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "isLoopOutput": true,
+                    "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                    "sourceBlockName": "phoneShapeLoop"
+                  }
+                },
+                "secondValue": {
+                  "_dynamicValue": {
+                    "type": "picklist",
+                    "value": "Business",
+                    "mappingType": "enter-value"
+                  }
+                },
+                "_rootTypeId": "f6742a727a154f0391b0305eda2004ab"
+              }
+            ]
+          },
+          "children": [
+            {
+              "_typeId": "3b00ac23559b477ebe0de41caacc464d",
+              "caption": "If Branch",
+              "_objectId": "85622568ffff4dd083766f3aa26a1fd8",
+              "templateTypeName": "if-then-else-branch",
+              "_rootTypeId": "3b00ac23559b477ebe0de41caacc464d",
+              "children": [
+                {
+                  "name": "getWorkPhoneNumberContaining30Characters",
+                  "mapper": "br-call-business-rule",
+                  "_typeId": "76765518c62a45d7bea97816c8b1547e",
+                  "caption": "Get Work Phone Number Containing 30 Characters",
+                  "_objectId": "eef9d09a928747bd8e4aa497ced9716f",
+                  "description": "Get Work Phone Number Containing 30 Characters",
+                  "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+                  "templateTypeName": "call-business-rule",
+                  "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+                  "inputs": [
+                    {
+                      "id": "944518cdade342d3bec3e13d861a2289",
+                      "name": "inputString",
+                      "type": "text",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "name": "phoneNumber",
+                          "path": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "type": "text",
+                          "active": true,
+                          "caption": "phoneNumber",
+                          "parentName": "phoneNumbers",
+                          "parentType": "array",
+                          "mappingType": "select-field",
+                          "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "isLoopOutput": true,
+                          "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                          "sourceBlockName": "phoneShapeLoop"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "51872ec0e0b64e4990d4fc2aa6a30628",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    },
+                    {
+                      "id": "cf61be37cb144c5ca320f936f46dabf6",
+                      "name": "actualLengthOfInputString",
+                      "type": "number",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "number",
+                          "value": 30,
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "9111cf3efd29485e8db26e92c66a2f53",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    }
+                  ]
+                },
+                {
+                  "name": "workPhone",
+                  "type": "text",
+                  "value": {
+                    "_dynamicValue": {
+                      "id": "outputString",
+                      "name": "outputString",
+                      "path": "eef9d09a928747bd8e4aa497ced9716f/outputString",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "eef9d09a928747bd8e4aa497ced9716f/outputString",
+                      "sourceBlockId": "eef9d09a928747bd8e4aa497ced9716f",
+                      "sourceBlockName": "getWorkPhoneNumberContaining30Characters"
+                    }
+                  },
+                  "mapper": "br-variable",
+                  "_typeId": "dac19da3af0d480892c6642bd047653c",
+                  "caption": "Work Phone",
+                  "variable": {
+                    "_dynamicValue": {
+                      "id": "057682bc60524f5e848e34b0c0371ff5",
+                      "name": "workPhone",
+                      "path": "output/057682bc60524f5e848e34b0c0371ff5",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "output/057682bc60524f5e848e34b0c0371ff5"
+                    }
+                  },
+                  "_objectId": "af58fa0f0880497a9a6c91fc1fed782a",
+                  "description": "Work Phone",
+                  "variableToggle": "false",
+                  "templateTypeName": "variable",
+                  "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "homeCheck",
+          "_typeId": "8304d74473724a9fbd90b0c75e59d582",
+          "caption": "Home Check",
+          "showElse": "no",
+          "_objectId": "1df489ec660a445e827284aaa582bfa0",
+          "description": "Home Check",
+          "templateTypeName": "if-then-else",
+          "_rootTypeId": "8304d74473724a9fbd90b0c75e59d582",
+          "condition": {
+            "_typeId": "7cc1fa85510940439ebfa5d499824588",
+            "_objectId": "0a56cd043c494680a702fea3a49500da",
+            "deprecated": "false",
+            "overrideScope": "internal",
+            "referenceScope": "internal",
+            "_rootTypeId": "7cc1fa85510940439ebfa5d499824588",
+            "children": [
+              {
+                "name": "newConditionRow",
+                "andor": "and",
+                "_typeId": "f6742a727a154f0391b0305eda2004ab",
+                "operator": "equalTo",
+                "_objectId": "91243963ab5b47c490c14e02e37f010b",
+                "firstValue": {
+                  "_dynamicValue": {
+                    "name": "phoneType",
+                    "path": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "type": "picklist",
+                    "active": true,
+                    "caption": "phoneType",
+                    "parentName": "phoneNumbers",
+                    "parentType": "array",
+                    "picklistId": "90e2ae49f02aaf539c579e39",
+                    "mappingType": "select-field",
+                    "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "isLoopOutput": true,
+                    "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                    "sourceBlockName": "phoneShapeLoop"
+                  }
+                },
+                "secondValue": {
+                  "_dynamicValue": {
+                    "type": "picklist",
+                    "value": "Home",
+                    "mappingType": "enter-value"
+                  }
+                },
+                "_rootTypeId": "f6742a727a154f0391b0305eda2004ab"
+              }
+            ]
+          },
+          "children": [
+            {
+              "_typeId": "3b00ac23559b477ebe0de41caacc464d",
+              "caption": "If Branch",
+              "_objectId": "e2477c271c1b4177af1d7aea723d283d",
+              "templateTypeName": "if-then-else-branch",
+              "_rootTypeId": "3b00ac23559b477ebe0de41caacc464d",
+              "children": [
+                {
+                  "name": "getHomePhoneNumberContaining30Characters",
+                  "mapper": "br-call-business-rule",
+                  "_typeId": "76765518c62a45d7bea97816c8b1547e",
+                  "caption": "Get Home Phone Number Containing 30 Characters",
+                  "_objectId": "f8bdc61347d84131aaa4e41d07d6a70a",
+                  "description": "Get Home Phone Number Containing 30 Characters",
+                  "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+                  "templateTypeName": "call-business-rule",
+                  "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+                  "inputs": [
+                    {
+                      "id": "944518cdade342d3bec3e13d861a2289",
+                      "name": "inputString",
+                      "type": "text",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "name": "phoneNumber",
+                          "path": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "type": "text",
+                          "active": true,
+                          "caption": "phoneNumber",
+                          "parentName": "phoneNumbers",
+                          "parentType": "array",
+                          "mappingType": "select-field",
+                          "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "isLoopOutput": true,
+                          "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                          "sourceBlockName": "phoneShapeLoop"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "98d12080e7df4757a36dd7fe4f7ced6c",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    },
+                    {
+                      "id": "cf61be37cb144c5ca320f936f46dabf6",
+                      "name": "actualLengthOfInputString",
+                      "type": "number",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "number",
+                          "value": 30,
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "d9f6fc68a0514f62902365a5660b2f4e",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    }
+                  ]
+                },
+                {
+                  "name": "homePhone",
+                  "type": "text",
+                  "value": {
+                    "_dynamicValue": {
+                      "id": "outputString",
+                      "name": "outputString",
+                      "path": "f8bdc61347d84131aaa4e41d07d6a70a/outputString",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "f8bdc61347d84131aaa4e41d07d6a70a/outputString",
+                      "sourceBlockId": "f8bdc61347d84131aaa4e41d07d6a70a",
+                      "sourceBlockName": "getHomePhoneNumberContaining30Characters"
+                    }
+                  },
+                  "mapper": "br-variable",
+                  "_typeId": "dac19da3af0d480892c6642bd047653c",
+                  "caption": "Home Phone",
+                  "variable": {
+                    "_dynamicValue": {
+                      "id": "d112bfdbc1ad440e975ed844619c769a",
+                      "name": "homePhone",
+                      "path": "output/d112bfdbc1ad440e975ed844619c769a",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "output/d112bfdbc1ad440e975ed844619c769a"
+                    }
+                  },
+                  "_objectId": "d3a6849ab64c4047ba39ebdffff93b3f",
+                  "description": "Home Phone",
+                  "variableToggle": "false",
+                  "templateTypeName": "variable",
+                  "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "personalCheck",
+          "_typeId": "8304d74473724a9fbd90b0c75e59d582",
+          "caption": "Personal Check",
+          "showElse": "no",
+          "_objectId": "014c0cd32af74669b78f696f1963243b",
+          "description": "Personal Check",
+          "templateTypeName": "if-then-else",
+          "_rootTypeId": "8304d74473724a9fbd90b0c75e59d582",
+          "condition": {
+            "_typeId": "7cc1fa85510940439ebfa5d499824588",
+            "_objectId": "64ab8838747148c6b26cc1d90a34794b",
+            "deprecated": "false",
+            "overrideScope": "internal",
+            "referenceScope": "internal",
+            "_rootTypeId": "7cc1fa85510940439ebfa5d499824588",
+            "children": [
+              {
+                "name": "newConditionRow",
+                "andor": "and",
+                "_typeId": "f6742a727a154f0391b0305eda2004ab",
+                "operator": "equalTo",
+                "_objectId": "0441da6ff99d4f388e9c5e1f7cd157f6",
+                "firstValue": {
+                  "_dynamicValue": {
+                    "name": "phoneType",
+                    "path": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "type": "picklist",
+                    "active": true,
+                    "caption": "phoneType",
+                    "parentName": "phoneNumbers",
+                    "parentType": "array",
+                    "picklistId": "90e2ae49f02aaf539c579e39",
+                    "mappingType": "select-field",
+                    "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "isLoopOutput": true,
+                    "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                    "sourceBlockName": "phoneShapeLoop"
+                  }
+                },
+                "secondValue": {
+                  "_dynamicValue": {
+                    "type": "picklist",
+                    "value": "Personal",
+                    "mappingType": "enter-value"
+                  }
+                },
+                "_rootTypeId": "f6742a727a154f0391b0305eda2004ab"
+              }
+            ]
+          },
+          "children": [
+            {
+              "_typeId": "3b00ac23559b477ebe0de41caacc464d",
+              "caption": "If Branch",
+              "_objectId": "ab62eed7e9af44708acbe41fa94e2c1f",
+              "templateTypeName": "if-then-else-branch",
+              "_rootTypeId": "3b00ac23559b477ebe0de41caacc464d",
+              "children": [
+                {
+                  "name": "getMobilePhoneNumberContaining30Characters",
+                  "mapper": "br-call-business-rule",
+                  "_typeId": "76765518c62a45d7bea97816c8b1547e",
+                  "caption": "Get Mobile Phone Number Containing 30 Characters",
+                  "_objectId": "aa7678775c0443ee9a0515a27514e9f8",
+                  "description": "Get Mobile Phone Number Containing 30 Characters",
+                  "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+                  "templateTypeName": "call-business-rule",
+                  "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+                  "inputs": [
+                    {
+                      "id": "944518cdade342d3bec3e13d861a2289",
+                      "name": "inputString",
+                      "type": "text",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "name": "phoneNumber",
+                          "path": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "type": "text",
+                          "active": true,
+                          "caption": "phoneNumber",
+                          "parentName": "phoneNumbers",
+                          "parentType": "array",
+                          "mappingType": "select-field",
+                          "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "isLoopOutput": true,
+                          "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                          "sourceBlockName": "phoneShapeLoop"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "2d81b02a41424df69e44bd1981cccdde",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    },
+                    {
+                      "id": "cf61be37cb144c5ca320f936f46dabf6",
+                      "name": "actualLengthOfInputString",
+                      "type": "number",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "number",
+                          "value": 30,
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "369f9e9b4fd445888e72125f56af57ae",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    }
+                  ]
+                },
+                {
+                  "name": "mobileNumber",
+                  "type": "text",
+                  "value": {
+                    "_dynamicValue": {
+                      "id": "outputString",
+                      "name": "outputString",
+                      "path": "aa7678775c0443ee9a0515a27514e9f8/outputString",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "aa7678775c0443ee9a0515a27514e9f8/outputString",
+                      "sourceBlockId": "aa7678775c0443ee9a0515a27514e9f8",
+                      "sourceBlockName": "getMobilePhoneNumberContaining30Characters"
+                    }
+                  },
+                  "mapper": "br-variable",
+                  "_typeId": "dac19da3af0d480892c6642bd047653c",
+                  "caption": "Mobile Number",
+                  "variable": {
+                    "_dynamicValue": {
+                      "id": "4e952bb25ef54f37965f901a4aab5858",
+                      "name": "mobilePhone",
+                      "path": "output/4e952bb25ef54f37965f901a4aab5858",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "output/4e952bb25ef54f37965f901a4aab5858"
+                    }
+                  },
+                  "_objectId": "c18fa9b7d1c8431480ebb1761a86ce34",
+                  "description": "Mobile Number",
+                  "variableToggle": "false",
+                  "templateTypeName": "variable",
+                  "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "faxCheck",
+          "_typeId": "8304d74473724a9fbd90b0c75e59d582",
+          "caption": "Fax Check",
+          "showElse": "no",
+          "_objectId": "b61a8ea336504c8d9adfc30a6d9037b1",
+          "description": "Fax Check",
+          "templateTypeName": "if-then-else",
+          "_rootTypeId": "8304d74473724a9fbd90b0c75e59d582",
+          "condition": {
+            "_typeId": "7cc1fa85510940439ebfa5d499824588",
+            "_objectId": "7f2bf9a003944ab19da38609929c3f08",
+            "deprecated": "false",
+            "overrideScope": "internal",
+            "referenceScope": "internal",
+            "_rootTypeId": "7cc1fa85510940439ebfa5d499824588",
+            "children": [
+              {
+                "name": "newConditionRow",
+                "andor": "and",
+                "_typeId": "f6742a727a154f0391b0305eda2004ab",
+                "operator": "equalTo",
+                "_objectId": "deccc7836f1044dc841616ee2b6c9958",
+                "firstValue": {
+                  "_dynamicValue": {
+                    "name": "phoneType",
+                    "path": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "type": "picklist",
+                    "active": true,
+                    "caption": "phoneType",
+                    "parentName": "phoneNumbers",
+                    "parentType": "array",
+                    "picklistId": "90e2ae49f02aaf539c579e39",
+                    "mappingType": "select-field",
+                    "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneType",
+                    "isLoopOutput": true,
+                    "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                    "sourceBlockName": "phoneShapeLoop"
+                  }
+                },
+                "secondValue": {
+                  "_dynamicValue": {
+                    "type": "picklist",
+                    "value": "Fax",
+                    "mappingType": "enter-value"
+                  }
+                },
+                "_rootTypeId": "f6742a727a154f0391b0305eda2004ab"
+              }
+            ]
+          },
+          "children": [
+            {
+              "_typeId": "3b00ac23559b477ebe0de41caacc464d",
+              "caption": "If Branch",
+              "_objectId": "f03557c0aa82404e94bb2be6a3368983",
+              "templateTypeName": "if-then-else-branch",
+              "_rootTypeId": "3b00ac23559b477ebe0de41caacc464d",
+              "children": [
+                {
+                  "name": "getFaxContaining30Characters",
+                  "mapper": "br-call-business-rule",
+                  "_typeId": "76765518c62a45d7bea97816c8b1547e",
+                  "caption": "Get Fax Containing 30 Characters",
+                  "_objectId": "619eced7e7f941a3bf2e5ffe4320eb5d",
+                  "description": "Get Fax Containing 30 Characters",
+                  "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+                  "templateTypeName": "call-business-rule",
+                  "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+                  "inputs": [
+                    {
+                      "id": "944518cdade342d3bec3e13d861a2289",
+                      "name": "inputString",
+                      "type": "text",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "name": "phoneNumber",
+                          "path": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "type": "text",
+                          "active": true,
+                          "caption": "phoneNumber",
+                          "parentName": "phoneNumbers",
+                          "parentType": "array",
+                          "mappingType": "select-field",
+                          "displayValue": "84502c26ae664ab9af0f44970ce1dd86/phoneNumber",
+                          "isLoopOutput": true,
+                          "sourceBlockId": "84502c26ae664ab9af0f44970ce1dd86",
+                          "sourceBlockName": "phoneShapeLoop"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "402470524b964038844cee99c8a4d9a3",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    },
+                    {
+                      "id": "cf61be37cb144c5ca320f936f46dabf6",
+                      "name": "actualLengthOfInputString",
+                      "type": "number",
+                      "scope": "input",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "number",
+                          "value": 30,
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+                      "lookupId": null,
+                      "schemaId": null,
+                      "_objectId": "666d2d9c594a41a9add9b0aa945a9c78",
+                      "picklistId": null,
+                      "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+                    }
+                  ]
+                },
+                {
+                  "name": "fax",
+                  "type": "text",
+                  "value": {
+                    "_dynamicValue": {
+                      "id": "outputString",
+                      "name": "outputString",
+                      "path": "619eced7e7f941a3bf2e5ffe4320eb5d/outputString",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "619eced7e7f941a3bf2e5ffe4320eb5d/outputString",
+                      "sourceBlockId": "619eced7e7f941a3bf2e5ffe4320eb5d",
+                      "sourceBlockName": "getFaxContaining30Characters"
+                    }
+                  },
+                  "mapper": "br-variable",
+                  "_typeId": "dac19da3af0d480892c6642bd047653c",
+                  "caption": "Fax",
+                  "variable": {
+                    "_dynamicValue": {
+                      "id": "eb92b1e2487a4717baf3e4d1f4b53b43",
+                      "name": "fax",
+                      "path": "output/eb92b1e2487a4717baf3e4d1f4b53b43",
+                      "type": "text",
+                      "active": true,
+                      "mappingType": "select-field",
+                      "displayValue": "output/eb92b1e2487a4717baf3e4d1f4b53b43"
+                    }
+                  },
+                  "_objectId": "8d8dfe015c14429bba0da4415693614d",
+                  "description": "Fax",
+                  "variableToggle": "false",
+                  "templateTypeName": "variable",
+                  "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAddressData",
+      "shape": "17e1c9736b594c70aa4c581331737afe",
+      "mapper": "br-get-data",
+      "_typeId": "bd96b951ed344d93836f373f0099f80e",
+      "caption": "Get Address Data",
+      "_objectId": "d452654000b143b48f38d52fd114fb6d",
+      "description": "Get Address Data",
+      "templateTypeName": "get-data",
+      "_rootTypeId": "bd96b951ed344d93836f373f0099f80e",
+      "shapeParameters": [
+        {
+          "id": "8ced2a79e35f4e5aacf247e7244d140a",
+          "name": "RecordId",
+          "type": "key",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "3645efb3c0af439d8c529931969143ef",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "3204f9c1fbd244a5af4925a0f632994b",
+          "name": "AssociateId",
+          "type": "key",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "b949e68305a64f159301fb74d69fe39a",
+              "name": "associateID",
+              "path": "input/b949e68305a64f159301fb74d69fe39a",
+              "type": "key",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "5cbfea79860f4509a6e5e4c066561fb1",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "967a39a28218453aabcc6a90d788f01c",
+          "name": "HolderType",
+          "type": "picklist",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "type": "picklist",
+              "value": "Associate",
+              "mappingType": "enter-value"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "814ba6df57bd4be2829c8cbf0e43467f",
+          "picklistId": "cfd9cc5b91374b819f7d3f6656b83f57",
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "38a83c4ea12e4716b0b84f9e0da08d37",
+          "name": "AddressType",
+          "type": "picklist",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "type": "picklist",
+              "value": "PHYSICAL",
+              "mappingType": "enter-value"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "fe0085fac4d548f48fce19e560cc263b",
+          "picklistId": "dd67bb74460854022bb4f642",
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "5eecb117dee243f3aa9daa20f32ab61d",
+          "name": "AsOfDate",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "4d33109c09914a1381b0e64f28902101",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "e17ade0f6c874d86ab7a290d6a953e37",
+          "name": "limit",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "e6682001119048799aa24fb4a74d3176",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "c81228addec943eb8a63051cbbcbe300",
+          "name": "skip",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "00593eb8236747809d21f17abacbd027",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        }
+      ]
+    },
+    {
+      "name": "addressShapeLoop",
+      "type": "forEach",
+      "upto": "<",
+      "items": {
+        "_dynamicValue": {
+          "name": "core-Addresses",
+          "path": "d452654000b143b48f38d52fd114fb6d/core-Addresses",
+          "type": "array",
+          "active": true,
+          "caption": "core-Addresses",
+          "mappingType": "select-field",
+          "displayValue": "d452654000b143b48f38d52fd114fb6d/core-Addresses",
+          "sourceBlockId": "d452654000b143b48f38d52fd114fb6d",
+          "isGetDataOutput": true,
+          "sourceBlockName": "getAddressData"
+        }
+      },
+      "mapper": "br-loop",
+      "_typeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "caption": "Address Shape Loop",
+      "iterator": "newLoop",
+      "_objectId": "0b44b8919c3c42f2b7de7d7e599cc392",
+      "description": "Address Shape Loop",
+      "templateTypeName": "loop",
+      "_rootTypeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "children": [
+        {
+          "name": "getAddressLine1Containing110Characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get Address Line 1 Containing 110 Characters",
+          "_objectId": "3e6ece98ffb04c33a040531026b57a3c",
+          "description": "Get Address Line 1 Containing 110 Characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "addressLine1",
+                  "path": "0b44b8919c3c42f2b7de7d7e599cc392/addressLine1",
+                  "type": "text",
+                  "active": true,
+                  "caption": "addressLine1",
+                  "parentName": "core-Addresses",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "0b44b8919c3c42f2b7de7d7e599cc392/addressLine1",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "0b44b8919c3c42f2b7de7d7e599cc392",
+                  "sourceBlockName": "addressShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "c375248f43d74ded9add92e1f94f3d4d",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 110,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "a5bb29eb84ea490db89ccaa9268e9e3a",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "addressLine1",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "3e6ece98ffb04c33a040531026b57a3c/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "3e6ece98ffb04c33a040531026b57a3c/outputString",
+              "sourceBlockId": "3e6ece98ffb04c33a040531026b57a3c",
+              "sourceBlockName": "getAddressLine1Containing110Characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Address Line 1",
+          "variable": {
+            "_dynamicValue": {
+              "id": "e3a9acc96d574de68c61dd3f24b0bf5a",
+              "name": "addressLine1",
+              "path": "output/e3a9acc96d574de68c61dd3f24b0bf5a",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/e3a9acc96d574de68c61dd3f24b0bf5a"
+            }
+          },
+          "_objectId": "a1edf81918624468a2d79f50910ddd4b",
+          "description": "Address Line 1",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "getAddressLine2Containing55Characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get Address Line 2 Containing 55 Characters",
+          "_objectId": "c949d72fb4fa4350922678ae61fdbc27",
+          "description": "Get Address Line 2 Containing 55 Characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "addressLine2",
+                  "path": "0b44b8919c3c42f2b7de7d7e599cc392/addressLine2",
+                  "type": "text",
+                  "active": true,
+                  "caption": "addressLine2",
+                  "parentName": "core-Addresses",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "0b44b8919c3c42f2b7de7d7e599cc392/addressLine2",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "0b44b8919c3c42f2b7de7d7e599cc392",
+                  "sourceBlockName": "addressShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "fe913c8a78f34d97983fb07f2e784ca0",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 55,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "b238acf7c782486eb63827bad4e04282",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "addressLine2",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "c949d72fb4fa4350922678ae61fdbc27/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "c949d72fb4fa4350922678ae61fdbc27/outputString",
+              "sourceBlockId": "c949d72fb4fa4350922678ae61fdbc27",
+              "sourceBlockName": "getAddressLine2Containing55Characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Address Line 2",
+          "variable": {
+            "_dynamicValue": {
+              "id": "bc6d804a6b5e477994f79b922ed40574",
+              "name": "addressLine2",
+              "path": "output/bc6d804a6b5e477994f79b922ed40574",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/bc6d804a6b5e477994f79b922ed40574"
+            }
+          },
+          "_objectId": "6759d887de624646bf00ebbff4edce41",
+          "description": "Address Line 2",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "getZipCodeContaining20Characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get Zip Code Containing 20 Characters",
+          "_objectId": "7249e08ac77b486fb5001206a3dbf473",
+          "description": "Get Zip Code Containing 20 Characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "postalCode",
+                  "path": "0b44b8919c3c42f2b7de7d7e599cc392/postalCode",
+                  "type": "text",
+                  "active": true,
+                  "caption": "postalCode",
+                  "parentName": "core-Addresses",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "0b44b8919c3c42f2b7de7d7e599cc392/postalCode",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "0b44b8919c3c42f2b7de7d7e599cc392",
+                  "sourceBlockName": "addressShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "6b8561a412c942ec96d4fc9aa150b484",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 20,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "f0abeb0c137b47d0b855c0f8ce5a22c8",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "zipCode",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "7249e08ac77b486fb5001206a3dbf473/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "7249e08ac77b486fb5001206a3dbf473/outputString",
+              "sourceBlockId": "7249e08ac77b486fb5001206a3dbf473",
+              "sourceBlockName": "getZipCodeContaining20Characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Zip Code",
+          "variable": {
+            "_dynamicValue": {
+              "id": "9e4399af489348d9a55df272fb348ce5",
+              "name": "zipCode",
+              "path": "9e4399af489348d9a55df272fb348ce5",
+              "type": "text",
+              "mappingType": "select-field",
+              "displayValue": "9e4399af489348d9a55df272fb348ce5"
+            }
+          },
+          "_objectId": "9e4399af489348d9a55df272fb348ce5",
+          "description": "Zip Code",
+          "variableToggle": "true",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "getCityNameContaining35Characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get City Name Containing 35 Characters",
+          "_objectId": "49775f1dd2c6441bb7cb991496cd46ef",
+          "description": "Get City Name Containing 35 Characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "cityName",
+                  "path": "0b44b8919c3c42f2b7de7d7e599cc392/cityName",
+                  "type": "text",
+                  "active": true,
+                  "caption": "cityName",
+                  "parentName": "core-Addresses",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "0b44b8919c3c42f2b7de7d7e599cc392/cityName",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "0b44b8919c3c42f2b7de7d7e599cc392",
+                  "sourceBlockName": "addressShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "be38fc83585141908f252914778a5346",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 35,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "b8dfbabb68cd422899a0a2b8a9bcb262",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "49775f1dd2c6441bb7cb991496cd46ef/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "49775f1dd2c6441bb7cb991496cd46ef/outputString",
+              "sourceBlockId": "49775f1dd2c6441bb7cb991496cd46ef",
+              "sourceBlockName": "getCityNameContaining35Characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "City",
+          "variable": {
+            "_dynamicValue": {
+              "id": "5422c43b034c409494eb69c671849194",
+              "name": "city",
+              "path": "output/5422c43b034c409494eb69c671849194",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/5422c43b034c409494eb69c671849194"
+            }
+          },
+          "_objectId": "9cf28e4aad934cf0bc1f040f8e287d96",
+          "description": "City",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "newBreak_3",
+          "_typeId": "d57a01f8a7ea42f19fcd5a850fdddcff",
+          "caption": "Break",
+          "_objectId": "7144b89c94254be4a899f27b6cbc03a8",
+          "templateTypeName": "flow-break-expression",
+          "_rootTypeId": "d57a01f8a7ea42f19fcd5a850fdddcff"
+        }
+      ]
+    },
+    {
+      "name": "getAssociateData",
+      "shape": "fc98837a59a941ae90e1f0fd2bc46df7",
+      "mapper": "br-get-data",
+      "_typeId": "bd96b951ed344d93836f373f0099f80e",
+      "caption": "Get Associate Data",
+      "_objectId": "9287035044bb44d2a4281ed263a1408f",
+      "description": "Get Associate Data",
+      "templateTypeName": "get-data",
+      "_rootTypeId": "bd96b951ed344d93836f373f0099f80e",
+      "shapeParameters": [
+        {
+          "id": "44ba2ee97c814d5b9bd678c12ac0d0b4",
+          "name": "AssociateId",
+          "type": "key",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "b949e68305a64f159301fb74d69fe39a",
+              "name": "associateID",
+              "path": "input/b949e68305a64f159301fb74d69fe39a",
+              "type": "key",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "3fd40a99eb7e4157b01f05c6ef56b035",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "f80d4a88c96043c6a140fa00d3d84779",
+          "name": "ExcludeAssociateId",
+          "type": "key",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "ba52d7f3eaed4d2aa993a8fe646cbbcc",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "32672e18441049ebbdbe47682c5e0edc",
+          "name": "paramEID",
+          "type": "text",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "65c0864704dc42d28e130ed23efcb937",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "eb92761801c34d40b5c7f235ba01bff7",
+          "name": "DisplayName",
+          "type": "text",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "295fbec17aa2480caceaea9fd5c7b850",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "7da09d1681ac4b3da6df1d9fcc2b9663",
+          "name": "OriginalHireDateGreaterThanEqualTo",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "7c7e7dd7d37c4e0ab407cf2792290ed9",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "4477d28eb78d496e9ae0b39ba94fd3ec",
+          "name": "limit",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "0288ac4084954bfdae271d8da87e77dd",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "667400761a4b47cdb42ff5bab7814907",
+          "name": "skip",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "caf614e737ee477490ff0ddb87d89ca4",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        }
+      ]
+    },
+    {
+      "name": "associateShapeLoop",
+      "type": "forEach",
+      "upto": "<",
+      "items": {
+        "_dynamicValue": {
+          "name": "associate",
+          "path": "9287035044bb44d2a4281ed263a1408f/associate",
+          "type": "array",
+          "active": true,
+          "caption": "associate",
+          "mappingType": "select-field",
+          "displayValue": "9287035044bb44d2a4281ed263a1408f/associate",
+          "sourceBlockId": "9287035044bb44d2a4281ed263a1408f",
+          "isGetDataOutput": true,
+          "sourceBlockName": "newGetData"
+        }
+      },
+      "mapper": "br-loop",
+      "_typeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "caption": "Associate Shape Loop",
+      "iterator": "newLoop",
+      "_objectId": "f686513d88fd451c9226ebc54a2acad5",
+      "description": "Associate Shape Loop",
+      "templateTypeName": "loop",
+      "_rootTypeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+      "children": [
+        {
+          "name": "getUserIDContaining100Characters",
+          "mapper": "br-call-business-rule",
+          "_typeId": "76765518c62a45d7bea97816c8b1547e",
+          "caption": "Get User ID Containing 100 Characters",
+          "_objectId": "de830f06ff77443ca9b3927dc6e1b084",
+          "description": "Get User ID Containing 100 Characters",
+          "businessRule": "b8993eb098724ba7a94ba223cfcf63a8",
+          "templateTypeName": "call-business-rule",
+          "_rootTypeId": "76765518c62a45d7bea97816c8b1547e",
+          "inputs": [
+            {
+              "id": "944518cdade342d3bec3e13d861a2289",
+              "name": "inputString",
+              "type": "text",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "name": "eID",
+                  "path": "f686513d88fd451c9226ebc54a2acad5/eID",
+                  "type": "text",
+                  "active": true,
+                  "caption": "eID",
+                  "parentName": "associate",
+                  "parentType": "array",
+                  "mappingType": "select-field",
+                  "displayValue": "f686513d88fd451c9226ebc54a2acad5/eID",
+                  "isLoopOutput": true,
+                  "sourceBlockId": "f686513d88fd451c9226ebc54a2acad5",
+                  "sourceBlockName": "associateShapeLoop"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "4926927962944944b0c7032570f05c3e",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            },
+            {
+              "id": "cf61be37cb144c5ca320f936f46dabf6",
+              "name": "actualLengthOfInputString",
+              "type": "number",
+              "scope": "input",
+              "value": {
+                "_dynamicValue": {
+                  "type": "number",
+                  "value": 100,
+                  "mappingType": "enter-value"
+                }
+              },
+              "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+              "lookupId": null,
+              "schemaId": null,
+              "_objectId": "b723d7849fed4e89b115fc19dfb22c92",
+              "picklistId": null,
+              "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+            }
+          ]
+        },
+        {
+          "name": "EID",
+          "type": "text",
+          "value": {
+            "_dynamicValue": {
+              "id": "outputString",
+              "name": "outputString",
+              "path": "de830f06ff77443ca9b3927dc6e1b084/outputString",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "de830f06ff77443ca9b3927dc6e1b084/outputString",
+              "sourceBlockId": "de830f06ff77443ca9b3927dc6e1b084",
+              "sourceBlockName": "getUserIDContaining100Characters"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "EID",
+          "variable": {
+            "_dynamicValue": {
+              "id": "72dea25734bd4a29aecf9db0d3126bc2",
+              "name": "userID",
+              "path": "output/72dea25734bd4a29aecf9db0d3126bc2",
+              "type": "text",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/72dea25734bd4a29aecf9db0d3126bc2"
+            }
+          },
+          "_objectId": "7b86de13df0d4dedb3598a80e62e5db3",
+          "description": "EID",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "lastHireDate",
+          "type": "datetime",
+          "value": {
+            "_dynamicValue": {
+              "name": "mostRecentHireDate",
+              "path": "f686513d88fd451c9226ebc54a2acad5/mostRecentHireDate",
+              "type": "datetime",
+              "active": true,
+              "caption": "mostRecentHireDate",
+              "parentName": "associate",
+              "parentType": "array",
+              "mappingType": "select-field",
+              "displayValue": "f686513d88fd451c9226ebc54a2acad5/mostRecentHireDate",
+              "isLoopOutput": true,
+              "sourceBlockId": "f686513d88fd451c9226ebc54a2acad5",
+              "sourceBlockName": "newLoop"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Last Hire Date",
+          "variable": {
+            "_dynamicValue": {
+              "id": "36c409df7e5240b3843b9d92fdac30ad",
+              "name": "lastHireDate",
+              "path": "output/36c409df7e5240b3843b9d92fdac30ad",
+              "type": "datetime",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/36c409df7e5240b3843b9d92fdac30ad"
+            }
+          },
+          "_objectId": "23e909ffb0e847a5904038c3cc8215b4",
+          "description": "Last Hire Date",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        },
+        {
+          "name": "originalHireDate",
+          "type": "datetime",
+          "value": {
+            "_dynamicValue": {
+              "name": "originalHireDate",
+              "path": "f686513d88fd451c9226ebc54a2acad5/originalHireDate",
+              "type": "datetime",
+              "active": true,
+              "caption": "originalHireDate",
+              "parentName": "associate",
+              "parentType": "array",
+              "mappingType": "select-field",
+              "displayValue": "f686513d88fd451c9226ebc54a2acad5/originalHireDate",
+              "isLoopOutput": true,
+              "sourceBlockId": "f686513d88fd451c9226ebc54a2acad5",
+              "sourceBlockName": "associateShapeLoop"
+            }
+          },
+          "mapper": "br-variable",
+          "_typeId": "dac19da3af0d480892c6642bd047653c",
+          "caption": "Original Hire Date",
+          "variable": {
+            "_dynamicValue": {
+              "id": "32502a5fa7794e3fa59c728bf5a03afe",
+              "name": "originalHireDate",
+              "path": "output/32502a5fa7794e3fa59c728bf5a03afe",
+              "type": "datetime",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "output/32502a5fa7794e3fa59c728bf5a03afe"
+            }
+          },
+          "_objectId": "a58a8a690df24c8c8a84b85065266215",
+          "description": "Original Hire Date",
+          "variableToggle": "false",
+          "templateTypeName": "variable",
+          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+        }
+      ]
+    },
+    {
+      "name": "getWorkerStatusData",
+      "shape": "b7f5aaf17672475481fead8c2744d14a",
+      "mapper": "br-get-data",
+      "_typeId": "bd96b951ed344d93836f373f0099f80e",
+      "caption": "Get Worker Status Data",
+      "_objectId": "d3fc3133252f4c76b7dc3638fee8d9ac",
+      "description": "Get Worker Status Data",
+      "templateTypeName": "get-data",
+      "_rootTypeId": "bd96b951ed344d93836f373f0099f80e",
+      "shapeParameters": [
+        {
+          "id": "79ce308ee0694a27beb67aabe09f793e",
+          "name": "reason",
+          "type": "key",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "b9a79b5ef8e94da3b4a3bf8439387145",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "7298921cc42d489bb969d3b1a47da0ee",
+          "name": "AssociateStatusCode",
+          "type": "text",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "b171af3b447945cc84b73eea7d9ffa49",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "ec22b0b043664fda9782b4a2d1032614",
+          "name": "AssociateStatus",
+          "type": "picklist",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "a44b389e36a5422fb555757c31147aad",
+          "picklistId": "62a50690c6b5467b81c6cba3bbbe39be",
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "2357e2c4ec41438db8089ae00e78a991",
+          "name": "AssociateStatus_Or",
+          "type": "picklist",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "1ce039892aca474ea5a0705debb659d0",
+          "picklistId": "62a50690c6b5467b81c6cba3bbbe39be",
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "70b44e23d378496faaef51372e05678f",
+          "name": "AssociateSubStatus",
+          "type": "picklist",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "6b60a020ea27425eb348daaa8904aada",
+          "picklistId": "3ce8fa017e654a84b1ca57778e5304d7",
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "e26a6c36741049f295278d66470cb0fa",
+          "name": "StartDate_exact",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "140a19d1755047c1a0f02e14f3035743",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "fdc3eefbcb4645e28afc6bb16acb0a7b",
+          "name": "EndDate_exact",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "4b03cd92347a496da0073a8c4d555a8c",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "f716685c3f3e42bbac98a4593ec3e159",
+          "name": "ReturnDate",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "ff2b0330189a4b9ba9921b97a75be5b8",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "48a9d7dd9ca84c728933eaddec48a80a",
+          "name": "AssociateId",
+          "type": "key",
+          "scope": "input",
+          "value": {
+            "_dynamicValue": {
+              "id": "b949e68305a64f159301fb74d69fe39a",
+              "name": "associateID",
+              "path": "input/b949e68305a64f159301fb74d69fe39a",
+              "type": "key",
+              "active": true,
+              "mappingType": "select-field",
+              "displayValue": "input/b949e68305a64f159301fb74d69fe39a"
+            }
+          },
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "60e0f0c7d9f34daaaa560a90ed1e6b9a",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "d43b24e92e054660911d5282875d6d47",
+          "name": "AsOfDate",
+          "type": "datetime",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "aa08fd4ed4104e8a87f3eac66a7158af",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "5d501e6f15054213ab7f1258d8fb0d1e",
+          "name": "recordId",
+          "type": "key",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "b666b93be13c49079efacbc680ea11ba",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "a9218b2b2cba471190c979bb659eb893",
+          "name": "limit",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "315ddba90c4e430dbf0fa4b944ca111d",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        },
+        {
+          "id": "39f170610985410690ec3c39f9881f8b",
+          "name": "skip",
+          "type": "number",
+          "scope": "input",
+          "value": null,
+          "_typeId": "3ab052c763f54b1cba942baa8a71e61a",
+          "lookupId": null,
+          "schemaId": null,
+          "_objectId": "2e6925231d6843a29533316e7ddc2aae",
+          "picklistId": null,
+          "_rootTypeId": "3ab052c763f54b1cba942baa8a71e61a"
+        }
+      ]
+    },
+    {
+      "name": "getLength",
+      "mapper": "br-get-length",
+      "_typeId": "db3c3a58d14a46e4a9b6ddc89873e553",
+      "caption": "Get Length",
+      "variable": {
+        "_dynamicValue": {
+          "name": "AssociateWorkerStatus",
+          "path": "d3fc3133252f4c76b7dc3638fee8d9ac/AssociateWorkerStatus",
+          "type": "array",
+          "active": true,
+          "caption": "AssociateWorkerStatus",
+          "mappingType": "select-field",
+          "displayValue": "d3fc3133252f4c76b7dc3638fee8d9ac/AssociateWorkerStatus",
+          "sourceBlockId": "d3fc3133252f4c76b7dc3638fee8d9ac",
+          "isGetDataOutput": true,
+          "sourceBlockName": "getWorkerStatusData"
+        }
+      },
+      "_objectId": "d28126784bbd440ea1bd2f331dda3a93",
+      "description": "Get Length",
+      "templateTypeName": "get-length",
+      "_rootTypeId": "db3c3a58d14a46e4a9b6ddc89873e553"
+    },
+    {
+      "name": "lengthCheck",
+      "_typeId": "8304d74473724a9fbd90b0c75e59d582",
+      "caption": "Length Check",
+      "showElse": "no",
+      "_objectId": "1b71847f7eaa47ada32c1a8aa925b937",
+      "description": "Length Check",
+      "templateTypeName": "if-then-else",
+      "_rootTypeId": "8304d74473724a9fbd90b0c75e59d582",
+      "condition": {
+        "_typeId": "7cc1fa85510940439ebfa5d499824588",
+        "_objectId": "606aebbbdfe04cd0b8ec9b2da57464d2",
+        "deprecated": "false",
+        "overrideScope": "internal",
+        "referenceScope": "internal",
+        "_rootTypeId": "7cc1fa85510940439ebfa5d499824588",
+        "children": [
+          {
+            "name": "newConditionRow",
+            "andor": "and",
+            "_typeId": "f6742a727a154f0391b0305eda2004ab",
+            "operator": "greaterThan",
+            "_objectId": "18bb7e13633945939bb0f095051efb31",
+            "firstValue": {
+              "_dynamicValue": {
+                "id": "d28126784bbd440ea1bd2f331dda3a93",
+                "name": "getLength",
+                "path": "d28126784bbd440ea1bd2f331dda3a93",
+                "type": "number",
+                "active": true,
+                "mappingType": "select-field",
+                "displayValue": "d28126784bbd440ea1bd2f331dda3a93"
+              }
+            },
+            "secondValue": {
+              "_dynamicValue": {
+                "type": "number",
+                "value": 0,
+                "mappingType": "enter-value"
+              }
+            },
+            "_rootTypeId": "f6742a727a154f0391b0305eda2004ab"
+          }
+        ]
+      },
+      "children": [
+        {
+          "_typeId": "3b00ac23559b477ebe0de41caacc464d",
+          "caption": "If Branch",
+          "_objectId": "93cd24d6af4741ecb2de5616dfaf8ca8",
+          "templateTypeName": "if-then-else-branch",
+          "_rootTypeId": "3b00ac23559b477ebe0de41caacc464d",
+          "children": [
+            {
+              "name": "workerStatusShapeLoop",
+              "type": "forEach",
+              "upto": "<",
+              "items": {
+                "_dynamicValue": {
+                  "name": "AssociateWorkerStatus",
+                  "path": "d3fc3133252f4c76b7dc3638fee8d9ac/AssociateWorkerStatus",
+                  "type": "array",
+                  "active": true,
+                  "caption": "AssociateWorkerStatus",
+                  "mappingType": "select-field",
+                  "displayValue": "d3fc3133252f4c76b7dc3638fee8d9ac/AssociateWorkerStatus",
+                  "sourceBlockId": "d3fc3133252f4c76b7dc3638fee8d9ac",
+                  "isGetDataOutput": true,
+                  "sourceBlockName": "getWorkerStatusData"
+                }
+              },
+              "mapper": "br-loop",
+              "_typeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+              "caption": "Worker Status Shape Loop",
+              "iterator": "newLoop",
+              "_objectId": "425a24d0a9c645d68529125923ab9e70",
+              "description": "Worker Status Shape Loop",
+              "templateTypeName": "loop",
+              "_rootTypeId": "bbf710b65a964b0e9d1514a6ed7afae9",
+              "children": [
+                {
+                  "name": "workerStatusSwitch",
+                  "_typeId": "45577bb36c8847bcb9d1adaded489ac6",
+                  "caption": "Worker Status Switch",
+                  "variable": {
+                    "_dynamicValue": {
+                      "name": "associateWorkerStatusType",
+                      "path": "425a24d0a9c645d68529125923ab9e70/associateWorkerStatusType",
+                      "type": "picklist",
+                      "active": true,
+                      "caption": "associateWorkerStatusType",
+                      "parentName": "AssociateWorkerStatus",
+                      "parentType": "array",
+                      "picklistId": "62a50690c6b5467b81c6cba3bbbe39be",
+                      "mappingType": "select-field",
+                      "displayValue": "425a24d0a9c645d68529125923ab9e70/associateWorkerStatusType",
+                      "isLoopOutput": true,
+                      "sourceBlockId": "425a24d0a9c645d68529125923ab9e70",
+                      "sourceBlockName": "workerStatusShapeLoop"
+                    }
+                  },
+                  "_objectId": "c7a50e71485d4efba83eae36345e6225",
+                  "templateTypeName": "switch",
+                  "_rootTypeId": "45577bb36c8847bcb9d1adaded489ac6",
+                  "children": [
+                    {
+                      "name": "newCase_6",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "picklist",
+                          "value": "Inactive",
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "e570d11943e141e19389ddee08ceeb20",
+                      "caption": "Case",
+                      "_objectId": "491fa455612f4cba85b5fb5d62bb89e2",
+                      "checkType": "singleValue",
+                      "templateTypeName": "case",
+                      "_rootTypeId": "e570d11943e141e19389ddee08ceeb20",
+                      "children": [
+                        {
+                          "name": "active",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "false",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Active",
+                          "lookupId": null,
+                          "schemaId": null,
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "fa037300453c4d999de849e685905b39",
+                              "name": "active",
+                              "path": "output/fa037300453c4d999de849e685905b39",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/fa037300453c4d999de849e685905b39"
+                            }
+                          },
+                          "_objectId": "c1ae15ded95745f285907eb1a9619a8b",
+                          "picklistId": null,
+                          "description": "Active",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        },
+                        {
+                          "name": "absent",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "true",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Absent",
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "0efcde835cd24a36a434e974d62f9e7e",
+                              "name": "absent",
+                              "path": "output/0efcde835cd24a36a434e974d62f9e7e",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/0efcde835cd24a36a434e974d62f9e7e"
+                            }
+                          },
+                          "_objectId": "1ef1ccc3fb084bb4ba2b254c522e8bb1",
+                          "description": "Absent",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "newCase_7",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "picklist",
+                          "value": "Active",
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "e570d11943e141e19389ddee08ceeb20",
+                      "caption": "Case",
+                      "_objectId": "da923efd0c004db3ae8fb7c4b0594828",
+                      "checkType": "singleValue",
+                      "templateTypeName": "case",
+                      "_rootTypeId": "e570d11943e141e19389ddee08ceeb20",
+                      "children": [
+                        {
+                          "name": "active",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "true",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Active",
+                          "lookupId": null,
+                          "schemaId": null,
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "fa037300453c4d999de849e685905b39",
+                              "name": "active",
+                              "path": "output/fa037300453c4d999de849e685905b39",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/fa037300453c4d999de849e685905b39"
+                            }
+                          },
+                          "_objectId": "7f04fa4ae1e842f3a5dfbccd750f1d7c",
+                          "picklistId": null,
+                          "description": "Active",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        },
+                        {
+                          "name": "absent_1",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "false",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Absent",
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "0efcde835cd24a36a434e974d62f9e7e",
+                              "name": "absent",
+                              "path": "output/0efcde835cd24a36a434e974d62f9e7e",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/0efcde835cd24a36a434e974d62f9e7e"
+                            }
+                          },
+                          "_objectId": "7d8772a30313420d9f0a4139ccfdec41",
+                          "description": "Absent",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "newCase_8",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "picklist",
+                          "value": "Leave of Absence - Paid",
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "e570d11943e141e19389ddee08ceeb20",
+                      "caption": "Case",
+                      "_objectId": "f6478e25cea24526a19351c8bf76654d",
+                      "checkType": "singleValue",
+                      "templateTypeName": "case",
+                      "_rootTypeId": "e570d11943e141e19389ddee08ceeb20",
+                      "children": [
+                        {
+                          "name": "active_1",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "true",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Active",
+                          "lookupId": null,
+                          "schemaId": null,
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "fa037300453c4d999de849e685905b39",
+                              "name": "active",
+                              "path": "output/fa037300453c4d999de849e685905b39",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/fa037300453c4d999de849e685905b39"
+                            }
+                          },
+                          "_objectId": "2845452af97245b7867522507914681f",
+                          "picklistId": null,
+                          "description": "Active",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        },
+                        {
+                          "name": "absent_2",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "true",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Absent",
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "0efcde835cd24a36a434e974d62f9e7e",
+                              "name": "absent",
+                              "path": "output/0efcde835cd24a36a434e974d62f9e7e",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/0efcde835cd24a36a434e974d62f9e7e"
+                            }
+                          },
+                          "_objectId": "3437b077231a460791826cedea892d6b",
+                          "description": "Absent",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "newCase_9",
+                      "value": {
+                        "_dynamicValue": {
+                          "type": "picklist",
+                          "value": "Leave of Absence - Unpaid",
+                          "mappingType": "enter-value"
+                        }
+                      },
+                      "_typeId": "e570d11943e141e19389ddee08ceeb20",
+                      "caption": "Case",
+                      "_objectId": "231805d3f4304c4e9d51b0235da3fe18",
+                      "checkType": "singleValue",
+                      "templateTypeName": "case",
+                      "_rootTypeId": "e570d11943e141e19389ddee08ceeb20",
+                      "children": [
+                        {
+                          "name": "active_2",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "true",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Active",
+                          "lookupId": null,
+                          "schemaId": null,
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "fa037300453c4d999de849e685905b39",
+                              "name": "active",
+                              "path": "output/fa037300453c4d999de849e685905b39",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/fa037300453c4d999de849e685905b39"
+                            }
+                          },
+                          "_objectId": "dff6177b1f964fb684f6f7e66452bd5a",
+                          "picklistId": null,
+                          "description": "Active",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        },
+                        {
+                          "name": "absent_3",
+                          "type": "logical",
+                          "value": {
+                            "_dynamicValue": {
+                              "type": "logical",
+                              "value": "true",
+                              "mappingType": "enter-value"
+                            }
+                          },
+                          "mapper": "br-variable",
+                          "_typeId": "dac19da3af0d480892c6642bd047653c",
+                          "caption": "Absent",
+                          "variable": {
+                            "_dynamicValue": {
+                              "id": "0efcde835cd24a36a434e974d62f9e7e",
+                              "name": "absent",
+                              "path": "output/0efcde835cd24a36a434e974d62f9e7e",
+                              "type": "logical",
+                              "active": true,
+                              "mappingType": "select-field",
+                              "displayValue": "output/0efcde835cd24a36a434e974d62f9e7e"
+                            }
+                          },
+                          "_objectId": "2aed3bf2f2224160afaa876282bb7965",
+                          "description": "Absent",
+                          "variableToggle": "false",
+                          "templateTypeName": "variable",
+                          "_rootTypeId": "dac19da3af0d480892c6642bd047653c"
+                        }
+                      ]
+                    },
+                    {
+                      "_typeId": "bb17db5277c745f5a51a8f13f4b3d31b",
+                      "caption": "Case Default",
+                      "_objectId": "129d51b2046c4de4bb1bdfa06da3d45c",
+                      "_rootTypeId": "bb17db5277c745f5a51a8f13f4b3d31b"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_miniAppName": "cornerStoneAdapter",
+  "_miniAppVersion": "0.0.0"
+}

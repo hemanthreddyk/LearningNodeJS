@@ -18,6 +18,7 @@
     "request": "^2.88.0"
   },
   "dependencies": {
-    "chalk": "^3.0.0"
+    "chalk": "^3.0.0",
+    "yargs": "^14.2.0"
   }
 }
